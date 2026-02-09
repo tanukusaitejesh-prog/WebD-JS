@@ -1,0 +1,21 @@
+[
+ {
+ "orderId": "ORD-1007",
+ "date": "2026-02-01",
+ "customer": { "name": "Ananya Rao", "city": "Hyderabad" },
+ "status": "DELIVERED",
+ "items": [
+ { "name": "Cotton Kurta", "qty": 2, "price": 899 },
+ { "name": "Dupatta", "qty": 1, "price": 499 }
+ ]
+ },
+ {
+ "orderId": "ORD-1008",
+ "date": "2026-02-03",
+ "customer": { "name": "Rahul Mehta", "city": "Mumbai" },
+ "status": "CANCELLED",
+ "items": [
+ { "name": "Sneakers", "qty": 1, "price": 2499 }
+ ]
+ }
+]
