@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Tickets Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Support Tickets</h1>
+
+        <div class="controls">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search by ID or Title"
+            />
+
+            <select id="statusFilter">
+                <option value="all">All Status</option>
+                <option value="open">Open</option>
+                <option value="in_progress">In Progress</option>
+                <option value="resolved">Resolved</option>
+                <option value="closed">Closed</option>
+            </select>
+
+            <select id="sortSelect">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+            </select>
+        </div>
+
+        <p id="ticketCount"></p>
+
+        <div id="ticketsContainer"></div>
+    </div>
+
+    <script src="server.js"></script>
+
+</body>
+</html>

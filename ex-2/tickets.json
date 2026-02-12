@@ -1,0 +1,112 @@
+[
+  {
+    "id": "TCK-1001",
+    "title": "Login fails for users with special characters in password",
+    "description": "Several users report 'Invalid credentials' when their password contains characters like # or % even though the password is correct.",
+    "status": "open",
+    "priority": "high",
+    "assignee": null,
+    "tags": ["auth", "login", "bug"],
+    "createdAt": "2026-02-03T09:15:00Z",
+    "updatedAt": "2026-02-10T13:05:00Z"
+  },
+  {
+    "id": "TCK-1002",
+    "title": "Invoice PDF download returns 500 error",
+    "description": "Downloading invoice PDFs intermittently fails with a 500. Observed mostly on large invoices with 50+ line items.",
+    "status": "in_progress",
+    "priority": "urgent",
+    "assignee": "Asha",
+    "tags": ["billing", "pdf", "backend", "500"],
+    "createdAt": "2026-01-28T12:30:00Z",
+    "updatedAt": "2026-02-11T08:40:00Z"
+  },
+  {
+    "id": "TCK-1003",
+    "title": "Search results show outdated data after profile update",
+    "description": "After editing a user profile, global search still shows old name/email until cache expires.",
+    "status": "open",
+    "priority": "medium",
+    "assignee": "Rohit",
+    "tags": ["search", "cache", "profile"],
+    "createdAt": "2026-02-01T06:10:00Z",
+    "updatedAt": "2026-02-08T16:55:00Z"
+  },
+  {
+    "id": "TCK-1004",
+    "title": "Mobile: Checkout button overlaps coupon input",
+    "description": "On small screens (<360px), the checkout CTA overlaps the coupon field making it hard to apply discounts.",
+    "status": "in_progress",
+    "priority": "high",
+    "assignee": "Meera",
+    "tags": ["ui", "mobile", "checkout", "css"],
+    "createdAt": "2026-02-05T14:05:00Z",
+    "updatedAt": "2026-02-11T11:20:00Z"
+  },
+  {
+    "id": "TCK-1005",
+    "title": "Email notifications not sent for password reset",
+    "description": "Password reset emails are not being delivered for some domains. Logs show 'queued' but no delivery events.",
+    "status": "open",
+    "priority": "urgent",
+    "assignee": "Asha",
+    "tags": ["email", "auth", "notifications", "deliverability"],
+    "createdAt": "2026-02-06T03:45:00Z",
+    "updatedAt": "2026-02-11T09:10:00Z"
+  },
+  {
+    "id": "TCK-1006",
+    "title": "Users see 'Access denied' after role change",
+    "description": "When an admin changes a user's role from Viewer to Editor, the user still gets 'Access denied' until they log out/in.",
+    "status": "resolved",
+    "priority": "medium",
+    "assignee": "Nikhil",
+    "tags": ["rbac", "permissions", "session"],
+    "createdAt": "2026-01-25T10:00:00Z",
+    "updatedAt": "2026-02-02T07:25:00Z"
+  },
+  {
+    "id": "TCK-1007",
+    "title": "Analytics dashboard loads slowly for large accounts",
+    "description": "Dashboard takes 12–18 seconds to load for accounts with >100k events/day. Suspect heavy aggregation query.",
+    "status": "in_progress",
+    "priority": "high",
+    "assignee": "Rohit",
+    "tags": ["performance", "analytics", "db", "slow"],
+    "createdAt": "2026-01-30T05:20:00Z",
+    "updatedAt": "2026-02-09T15:30:00Z"
+  },
+  {
+    "id": "TCK-1008",
+    "title": "CSV export missing rows when filtered by date range",
+    "description": "Exporting CSV with a date range filter sometimes omits the last day's data. Possibly timezone boundary issue.",
+    "status": "open",
+    "priority": "medium",
+    "assignee": null,
+    "tags": ["export", "csv", "timezone", "reporting"],
+    "createdAt": "2026-02-07T18:35:00Z",
+    "updatedAt": "2026-02-10T04:50:00Z"
+  },
+  {
+    "id": "TCK-1009",
+    "title": "Payment gateway webhook retries causing duplicate orders",
+    "description": "Webhook retries from the payment provider are occasionally creating duplicate orders when idempotency key is missing.",
+    "status": "open",
+    "priority": "urgent",
+    "assignee": "Meera",
+    "tags": ["payments", "webhook", "orders", "idempotency"],
+    "createdAt": "2026-02-09T07:05:00Z",
+    "updatedAt": "2026-02-11T10:05:00Z"
+  },
+  {
+    "id": "TCK-1010",
+    "title": "UI: Dark mode contrast issues on settings page",
+    "description": "Text on the settings page is too dim in dark mode, especially section labels and helper text.",
+    "status": "closed",
+    "priority": "low",
+    "assignee": "Nikhil",
+    "tags": ["ui", "dark-mode", "accessibility"],
+    "createdAt": "2026-01-20T09:55:00Z",
+    "updatedAt": "2026-02-04T12:15:00Z"
+  }
+]
